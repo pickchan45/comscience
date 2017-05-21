@@ -1,0 +1,163 @@
+<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>สาขาวิทยาการคอมพิวเคอร์ คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยหอการค้าไทย</title>
+<!-- Bootstrap Core CSS -->
+<link href="/comscience/css/bootstrap.min.css" rel="stylesheet">
+<link href="/comscience/css/animate.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+<!-- Custom CSS -->
+<link href="/comscience/css/style.css" rel="stylesheet">
+<!-- Custom CSS in page only -->
+<style>
+    
+    strong { font-size:18px; }
+    p { font-size:16px; }
+    
+    .photo-gallery {color:#313437; background-color:#fff; }
+    .photo-gallery p {color:#7d8285; }
+    .photo-gallery h2 { font-weight:700; margin-bottom:40px; padding-top:40px; color:inherit; }
+    
+    .img-responsive { width:100%; height:150px; }
+    
+    ul {list-style-type:circle; padding-left:20px; }
+    
+    @media (max-width:767px) {
+        
+        .photo-gallery h2 { margin-bottom:25px; padding-top:25px; font-size:24px; }
+        .simple-slider .swiper-button-next,.simple-slider .swiper-button-prev { display:none; }
+        .img-responsive { height:auto; }
+    
+    }
+    
+    .photo-gallery .intro { font-size:16px; max-width:500px; margin:0 auto 40px; }
+    .photo-gallery .intro p { margin-bottom:0; }
+    .photo-gallery .photos { padding-bottom:20px; }
+    .photo-gallery .item { padding-bottom:30px; }
+    .simple-slider .swiper-slide { height:500px; background-repeat:no-repeat; background-size:cover; background-position:center; }
+    .simple-slider .swiper-button-next,.simple-slider .swiper-button-prev { width:50px; margin-left:20px; margin-right:20px; }
+    
+    @media (max-width:767px) {
+        
+        .simple-slider .swiper-slide { height:360px; }
+    
+    }
+    
+</style>
+</head>
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation -->
+<%@include file="/include/nav.jsp"%>
+<!-- Intro Section -->
+<section id="intro" class="intro-section parallax">
+    <div class="container">
+        <div class="col-md-12">
+            <h1 class="animated fadeInRight" style="color:#ffffff;text-shadow: 0px 0px 10px #000000;">ผลงานนักศึกษา</h1>
+        </div>
+    </div>
+</section>
+<!-- Content Section -->
+<section id="content" class="content-section">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="page-header">
+                    <h1>UbinurSS</h1>
+                </div>
+            </div> 
+            <div class="col-xs-12 col-sm-6 col-md-9">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9imB51p2MUE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <br>
+                <strong>ชื่อภาษาไทย</strong>
+                <p>ระบบติดตามการเคลื่อนไหวสำหรับการดูแลผู้สูงอายุ โดยใช้เทคนิคการทำเหมืองกระแสข้อมูล</p>
+                
+                <strong>ชื่อภาษาอังกฤษ</strong>
+                <p>A Ubiquitous Nursing Support System</p>
+                
+                <strong>บทคัดย่อ</strong>
+                <p>
+                    ในช่วงทศวรรษที่ผ่านมา โครงสร้างประชากรของประเทศไทยมีการเปลี่ยนแปลงอย่างมีนัยยะสำคัญ โดยสัดส่วนของประชากรผู้สูงอายุเพิ่มขึ้นอย่างรวดเร็วและต่อเนื่อง และคาดการณ์ว่าในอีกไม่เกิน 20 ปีข้างหน้า ประเทศไทยจะเข้าสู่สังคมผู้สูงอายุระดับสุดยอด ปัญหาที่พบมากในผู้สูงอายุ มีสาเหตุมาจากสุขภาพร่างกายที่อ่อนแอลงตามอายุที่เพิ่มมากขึ้น หนึ่งในปัญหาสำคัญของผู้สูงอายุ ได้แก่ การสูญเสียความสามารถในการเคลื่อนไหว (Immobility) ซึ่งคือ ภาวะที่ผู้สูงอายุเสียสมรรถภาพในการเคลื่อนไหว มีการดำเนินกิจกรรมต่างๆ น้อยลง ชอบอยูเฉย ไมออกจากบ้าน และนอนติดกับเตียง ภาวะดังกล่าวเป็นความผิดปกติขั้นต้นที่นำไปสู่การสูญเสียความสามารถในการดำเนินกิจวัตรประจำวันด้านอื่นๆ มีผลกระทบต่อผู้สูงอายุอย่างมากทั้งด้านร่างกายและจิตใจ อีกทั้งเป็นปัจจัยสำคัญซึ่งสามารถทำนายการเสียชีวิตในผู้สูงอายุ เพื่อสนับสนุนบุคลากรทางการแพทย์ในการวินิจฉัย วางแผนการรักษา และป้องกันภาวะการสูญเสียความสามารถในการเคลื่อนไหว ผู้จัดทำจึงมีแนวคิดในการพัฒนาระบบที่สามารถเฝ้าระวังและติดตามการเคลื่อนไหวของผู้สูงอายุจากระยะไกล ระบบที่พัฒนาขึ้นถูกออกแบบตามความต้องการของ “คณะแพทย์ศาสตร์ ศิริราชพยาบาล” โดยระบบจะรับข้อมูลจากเซ็นเซอร์ที่ติดอยู่กับตัวผู้สูงอายุเพื่อจำแนกและวิเคราะห์กิจกรรมที่เกี่ยวข้องกับการเคลื่อนไหวแบบทันที (Real-time) ระบบมีความสามารถในการจัดเก็บสถิติกิจกรรมที่เกี่ยวข้องการเคลื่อนไหวและความเสี่ยงในการล้มของผู้สูงอายุ นอกจากนี้ ระบบที่พัฒนาขึ้นถูกออกแบบให้สามารถทำงานร่วมกับอุปกรณ์เคลื่อนที่ (Mobile devices) ผ่านเครือข่ายอินเทอร์เน็ต
+                </p>
+
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <strong>ผู้พัฒนา</strong>
+                <p>นายกิตติศักดิ์ บัวบก<br>
+                นายสุชาติ หมัดโล๊ะ<br>
+                นายกฤษดาพงษ์ เขตบุญไสย</p>
+
+                <strong>อาจารย์ที่ปรึกษาโครงการ</strong>
+                <p>อาจารย์ ดร.วัศวี แสนศรีมหาชัย<br>
+                อาจารย์ ดร.มานะชัย โต๊ะชูดี</p>
+                
+                <strong>ผลงานที่ผ่านมา</strong>
+                <ul>
+                    <li>ได้รับรางวัลชมเชย มหกรรมประกวดเทคโนโลยีสารสนเทศแห่งประเทศไทยครั้งที่ 14 National Software Contest (NSC14)</li>
+                    <li>ผ่านการคัดเลือก และได้รับทุนสนับสนุนพัฒนาต่อยอดผลงาน จากโครงการ "ต่อกล้าให้เติบใหญ่"</li>
+                    <li>ได้เข้าร่วมแข่งขันโครงการโครงการ Student Innovation Challenge (SIC 2015)</li>
+                    <li>ได้เข้าร่วม NCIT 2015 ที่เชียงใหม่ในการนำเสนอบทความวิชาการ</li>
+                    <li>ได้เข้าร่วม NCIT 2016 ที่กระบี่ในการนำเสนอบทความวิชาการ</li>
+                    <li>ได้ลงนิตยสาร Digital Age</li>
+                    <li>ลงหนังสือพิมพ์ manager และ bangkok post</li>
+                    <li>เข้าร่วมนำเสนอบทความที่ญี่ปุ่น งาน AAI 2016 International Conference</li>
+                    <li>เข้ารอบ 20 ทีมงานเจ้าฟ้าไอที 2016</li>
+                    <li>ผ่านเข้ารอบ 300 ทีม(SIPA2016)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-header">
+            <strong>ภาพผลงาน</strong>
+        </div>
+        <div class="photo-gallery">
+            <div class="row photos">
+                <div class="col-lg-3 col-md-4 col-sm-6 item">
+                    <a href="/comscience/images/slideshow/p1.jpg" data-lightbox="photos"><img class="img-responsive" src="/comscience/images/slideshow/p1.jpg"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 item">
+                    <a href="/comscience/images/slideshow/p2.png" data-lightbox="photos"><img class="img-responsive" src="/comscience/images/slideshow/p2.png"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 item">
+                    <a href="/comscience/images/slideshow/p3.png" data-lightbox="photos"><img class="img-responsive" src="/comscience/images/slideshow/p3.png"></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 item">
+                    <a href="/comscience/images/slideshow/p4.jpg" data-lightbox="photos"><img class="img-responsive" src="/comscience/images/slideshow/p4.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</section>
+<!-- footer Section -->
+<section class="footer-section">
+    <div class="container">
+        footer
+    </div>
+</section>
+<!-- jQuery -->
+<script src="/comscience/js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="/comscience/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+<script src="/comscience/js/script.min.js"></script>
+    
+<!-- Scrolling JavaScript -->
+<script src="/comscience/js/jquery.easing.min.js"></script>
+<script src="/comscience/js/scrolling-nav.js"></script>
+<script src="/comscience/js/SmoothScroll.js"></script>
+<script src="/comscience/js/jquery.inview.js"></script>
+<script src="/comscience/js/5605100052.js"></script>
+<script src="/comscience/js/parallax.js"></script>
+</body>
+</html>
